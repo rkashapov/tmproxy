@@ -5,6 +5,8 @@ TM Proxy <img src="https://travis-ci.org/rkashapov/tmproxy.svg?branch=master" />
 TM Proxy is a simple web server that proxies all queries to specified server and sends back to a client a processed text.
 The response processing is simple: the ™ character is added after all 6-character length words.
 
+Live example is [here](https://still-ridge-34585.herokuapp.com).
+
 Requirements
 ============
 Python 3.6
