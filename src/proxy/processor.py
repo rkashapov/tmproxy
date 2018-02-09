@@ -55,12 +55,12 @@ class AbstractTextProcessor(IProcessor):
                 # current tag name
                 tag = ''
 
-                # skip tag contents
+                # skip tag content
                 while char and char != '>':
                     tag += char
 
                     # If current tag is script or style
-                    # we should ignore it contents.
+                    # we should ignore it content.
                     if tag in ("<script", "<style"):
                         in_script = True
                     elif in_script and tag in ("</script", "</style"):
@@ -117,7 +117,7 @@ class LinkProcessor(IProcessor):
     `hostname` argument to be absolute links.
 
     Example
-    >>> lp = LinkProcessor("https://habrahabr.ru")
+    >>> lp = LinkProcessor("https://yandex.ru")
     >>> link = '<a href="https://yandex.ru/all/"></a>'
     >>> assert lp.process_html(link) == '<a href="/all/"></a>'
     """
