@@ -17,7 +17,6 @@ class IProcessor:
     It accepts html page body in unicode and returns processed content.
     """
 
-
     @abc.abstractmethod
     def process_content(self, html_page: str) -> str:
         """
@@ -33,8 +32,8 @@ class IProcessor:
 class Proxy(web.Application):
     """
     ..class:Proxy represents a simple http proxy server
-    Proxy sends all accepted requests to an origin server specified by `address`
-    argument.
+    Proxy sends all accepted requests to an origin server specified by
+    `address` argument.
     The body of the response received from the origin server is passed to the
     `processor` instance and sent back to the client.
 

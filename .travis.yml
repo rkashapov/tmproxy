@@ -5,7 +5,9 @@ install:
   - pip install -r requirements.txt
   - pip install coverage
   - pip install codecov
+  - pip install pycodestyle
 script:
   - coverage run --source ./src -m unittest discover src/
+  - pycodestyle --filename ./src/proxy/*.py
 after_success:
   - codecov -e CODECOV_TOKEN
