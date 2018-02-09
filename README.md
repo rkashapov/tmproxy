@@ -1,5 +1,5 @@
-TM Proxy <img src="https://travis-ci.org/rkashapov/tmproxy.svg?branch=master" />
-<img src="https://codecov.io/gh/rkashapov/tmproxy/branch/master/graph/badge.svg" />
+™ Proxy <img src="https://travis-ci.org/rkashapov/tmproxy.svg?branch=master" />
+[<img src="https://codecov.io/gh/rkashapov/tmproxy/branch/master/graph/badge.svg" />](https://travis-ci.org/rkashapov/tmproxy/)
 ========
 
 TM Proxy is a simple web server that proxies all queries to specified server and sends back to a client a processed text.
