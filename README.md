@@ -23,7 +23,7 @@ For example:
 PORT=8888 python3 -m proxy --host https://habrahabr.ru
 ```
 
-If you visit http://localhost:8888 in yout browser you will see trademarked content.
+If you visit http://localhost:8888 in your browser you will see trademarked content.
 
 Docker
 ======
