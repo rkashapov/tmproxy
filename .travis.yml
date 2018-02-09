@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.6"
+install:
+  - pip install -r requirements.txt
+  - pip install coverage
+  - pip install codecov
+script:
+  - coverage run --source ./src -m unittest discover src/
+after_success:
+  - codecov -e CODECOV_TOKEN
